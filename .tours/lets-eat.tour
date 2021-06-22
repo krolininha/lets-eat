@@ -1,0 +1,60 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "lets eat!",
+  "steps": [
+    {
+      "directory": "eatfood",
+      "description": "Hey! Welcome to your Flask set up code tour. Grab some tasty snacks and enjoy!\n\nFirst, let's have an overall look of the project structure. You will see for this project we have one folder/directory called \"eatfoodapp\", and some files outside of that."
+    },
+    {
+      "file": "eatfoodapp/__init__.py",
+      "description": "Here is the init file. You see these quite often in python apps. `init` is short for initialize. For example this is where we import flask into our app\n\nImport flask here and also our routes (which we will look at shortly). We do a lot of \"importing\" in flask. This is to make sure the right files are talking to each other, so to speak.\n\n",
+      "line": 1
+    },
+    {
+      "file": "eatfoodapp/__init__.py",
+      "description": "For example:\nhere we import the routes from the `eatfoodapp` to make sure the `routes` file is talking to the `__init__` file. It is a way of the connecting the two.",
+      "line": 5
+    },
+    {
+      "file": "eatfoodapp/routes.py",
+      "description": "Now we come to our routes. Routes, or URLs, help a user navigate our website.\n\nFor example: we might have an app called \"myawesomeproject.com\" and on this site we have an about page. So it would be nice if we could allow the user to enter \"myawesomeproject.com/about\". The routes are what allow us to do that.\n\nP.S. URL stands for \"Universal Resource Locator\"",
+      "line": 1
+    },
+    {
+      "file": "requirements.txt",
+      "description": "These are the project \"requirements\" - e.g. this is what you need to make your app run. This is not always a necessary file, but if you are sharing your code with others (via GitHub for example), it is polite to list all the dependencies you are using in your projects, so someone else can \"download\" these dependencies on to their machine.\n\nFor me, personally, I find it also helps me keep a track of what I am using, which can be useful when your project gets bigger and bigger.",
+      "line": 1
+    },
+    {
+      "file": "run.py",
+      "description": "And finally we have our \"run\" file. This is what we use to run (haha) the project from the command line/terminal. That means: to see what this project does go into the \"eatfood\" project directory, type in `python run.py` and watch the magic happen!\n\nHot tip: on VSC (Visual Studio Code), you can click on the \"Terminal\" tab and select \"New terminal\". This should open a terminal interface at the bottom of your screen where you are already in the project directory. Ensure you have your virtual environment activated, then type `python run.py` here and it will work the same way.",
+      "line": 1
+    },
+    {
+      "file": "eatfoodapp/routes.py",
+      "description": "Let's go back to our routes file, since this is where the python magic happens.\nWe define a new route with `@app.route()`. In the brackets, we put what we want the user to type in. Here we have a simple forward slash `(/)` to show that this is our home route.\nFor example when a user enters \"myawesomeproject.com\" with no extra info after this address.",
+      "line": 4
+    },
+    {
+      "file": "eatfoodapp/routes.py",
+      "description": "Now we can write a function to handle logic of what will happen when the user goes to the home page.\n\nHere we write the variables `heading`, `subheading` and `foods`, and give them some content.\n\nAt the end we \"return\" the template we want to use (`home.html`), and how we would like our variables to be treated within this template. This will make sense when we look at the html page in a moment.\n\nP.S. return basically means \"do this and then leave the function, please\"",
+      "line": 5
+    },
+    {
+      "file": "eatfoodapp/templates/home.html",
+      "description": "Now we are in a directory within a directory, we are in `templates` which is in `eatfoodapp`. Templates are where we keep out html files, in this case `home.html`. For now this contains a basic html structure with bootstrap.\n\nIn lines 15 and 16, you can see our `heading` and `subheading` which you have already seen in our routes.  The {{double curly braces}} are a little thing called \"Jinga2\" which is a templating language. A templating language is how we can insert our python code (in `routes.py`) into the html file so the visitor to our website can see it.\n\nSo the user will not see {{heading}}, they will see \"Let's Eat!\"",
+      "line": 14
+    },
+    {
+      "file": "eatfoodapp/templates/home.html",
+      "description": "Let's work with a list!\nYou remember in `routes.py` we had a variable called `foods` with a list of different foods? We are now going to use a for loop to iterate (go over) this list. With the magic of Python, jinja2 and html working together, the for loop will give us an unordered list of all the foods in our list.\n\nNotice how the syntax (the way we write it) is different: for logic we use {% this %}, for text on the web page we use {{ this }}",
+      "line": 23
+    },
+    {
+      "file": "eatfoodapp/templates/home.html",
+      "description": "And that's it!!\n\nI'm glad you enjoyed our little journey through flask and had some nice snacks along the way. If you haven't already, you can have a look at this website on your local server by running `python run.py` and entering `http://localhost:5000/` or `http://127.0.0.1:5000/` into your browser. Play with the code, see what breaks, see what changes and just have some fun!\n\nBye!",
+      "line": 29
+    }
+  ]
+}
