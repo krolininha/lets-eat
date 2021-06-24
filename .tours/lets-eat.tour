@@ -8,17 +8,17 @@
     },
     {
       "file": "eatfoodapp/__init__.py",
-      "description": "Here is the init file. You see these quite often in python apps. `init` is short for initialize. For example this is where we import flask into our app\n\nImport flask here and also our routes (which we will look at shortly). We do a lot of \"importing\" in flask. This is to make sure the right files are talking to each other, so to speak.\n\n",
+      "description": "Here is the init file. You see these quite often in python apps. `init` is short for initialize. This is where we import flask and also our routes (which we will look at shortly). We import files and libraries so we can use them in the file in which we are working.",
       "line": 1
     },
     {
       "file": "eatfoodapp/__init__.py",
-      "description": "For example:\nhere we import the routes from the `eatfoodapp` to make sure the `routes` file is talking to the `__init__` file. It is a way of the connecting the two.",
+      "description": "For example:\nhere we import the routes from the `eatfoodapp` to make sure the `routes` file is \"talking to\" the `__init__` file. It is a way of the connecting the two.",
       "line": 5
     },
     {
       "file": "eatfoodapp/routes.py",
-      "description": "Now we come to our routes. Routes, or URLs, help a user navigate our website.\n\nFor example: we might have an app called \"myawesomeproject.com\" and on this site we have an about page. So it would be nice if we could allow the user to enter \"myawesomeproject.com/about\". The routes are what allow us to do that.\n\nP.S. URL stands for \"Universal Resource Locator\"",
+      "description": "Now we come to our `routes.py` file. Routes, or URLs, help a user navigate our website.\n\nFor example: we might have an app called \"myawesomeproject.com\" and on this site we have an about page. So it would be nice if we could allow the user to enter \"myawesomeproject.com/about\". The routes are what allow us to do that.\n\nP.S. URL stands for \"Universal Resource Locator\"",
       "line": 1
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "file": "eatfoodapp/routes.py",
-      "description": "Let's go back to our routes file, since this is where the python magic happens.\nWe define a new route with `@app.route()`. In the brackets, we put what we want the user to type in. Here we have a simple forward slash `(/)` to show that this is our home route.\nFor example when a user enters \"myawesomeproject.com\" with no extra info after this address.",
+      "description": "Let's go back to our routes file, since this is where the python magic happens.\nWe define a new route with `@app.route()`. In the brackets, we put what we want the user to type in. Here we have a simple forward slash `(/)` to show that this is our home route.\nFor example when a user enters \"myawesomeproject.com\" with no extra info after this address, the programme will go to this app.route to see what it needs to do.",
       "line": 4
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "file": "eatfoodapp/templates/home.html",
-      "description": "Now we are in a directory within a directory, we are in `templates` which is in `eatfoodapp`. Templates are where we keep out html files, in this case `home.html`. For now this contains a basic html structure with bootstrap.\n\nIn lines 15 and 16, you can see our `heading` and `subheading` which you have already seen in our routes.  The {{double curly braces}} are a little thing called \"Jinga2\" which is a templating language. A templating language is how we can insert our python code (in `routes.py`) into the html file so the visitor to our website can see it.\n\nSo the user will not see {{heading}}, they will see \"Let's Eat!\"",
+      "description": "Now we are in a directory within a directory, we are in `templates` which is in `eatfoodapp`. Templates are where we keep out html files, in this case `home.html`. For now this contains a basic html structure with bootstrap.\n\nIn lines 15 and 16, you can see our `heading` and `subheading` which you have already seen in our routes.  The {{double curly braces}} are a little thing called \"Jinga2\" which is a templating language. A templating language is how we can insert our python code (in `routes.py`) into the html file so the visitor to our website can see it.\n\nSo the user will not see {{heading}}, they will see \"Let's Eat!\" because this is what we told it to say in `routes.py`",
       "line": 14
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "file": "eatfoodapp/templates/home.html",
-      "description": "And that's it!!\n\nI'm glad you enjoyed our little journey through flask and had some nice snacks along the way. If you haven't already, you can have a look at this website on your local server by running `python run.py` and entering `http://localhost:5000/` or `http://127.0.0.1:5000/` into your browser. Play with the code, see what breaks, see what changes and just have some fun!\n\nBye!",
+      "description": "And that's it!!\n\nI'm glad you enjoyed our little journey through flask and had some nice snacks along the way. If you haven't already, you can have a look at this website on your local server by running `python run.py` and entering `http://localhost:5000/` or `http://127.0.0.1:5000/` into your browser. Play with the code, see what breaks, see what changes and just have some fun!\n\nUntil next time!",
       "line": 29
     }
   ]
