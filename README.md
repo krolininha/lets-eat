@@ -11,14 +11,15 @@ To take the tour, clone this repo and open it with visual studio code. You need 
 
 Before you start, please create a virual environment in the project folder and activate it (example iOS):
 ```
-# create virutal environment (env is the name you want 
-# to give to your virtual environment:
+# create virutal environment:
 
 $ python3 -m venv env
 
 # activate virutal env
 $ source env/bin/activate
 ```
+You can also follow the instructions given in the [Flask docs](https://flask.palletsprojects.com/en/2.0.x/installation/?highlight=virtual)
+
 
 In order to install all nececsary libraries please:
 ```

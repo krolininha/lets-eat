@@ -43,12 +43,12 @@
     },
     {
       "file": "eatfoodapp/templates/home.html",
-      "description": "Now we are in a directory within a directory, we are in `templates` which is in `eatfoodapp`. Templates are where we keep out html files, in this case `home.html`. For now this contains a basic html structure with bootstrap.\n\nIn lines 15 and 16, you can see our `heading` and `subheading` which you have already seen in our routes.  The {{double curly braces}} are a little thing called \"Jinga2\" which is a templating language. A templating language is how we can insert our python code (in `routes.py`) into the html file so the visitor to our website can see it.\n\nSo the user will not see {{heading}}, they will see \"Let's Eat!\" because this is what we told it to say in `routes.py`",
+      "description": "Now we are in a directory within a directory, we are in `templates` which is in `eatfoodapp`. Templates are where we keep out html files, in this case `home.html`. For now this contains a basic html structure with bootstrap.\n\nIn lines 15 and 16, you can see our `heading` and `subheading` which you have already seen in our routes.  The {{double curly braces}} are a little thing called \"Jinga2\" which is a templating language. A templating language is how we can insert our python variables (in `routes.py`) into the html file so the visitor to our website can see it.\n\nSo the user will not see {{heading}}, they will see \"Let's Eat!\" because this is what we told it to say in `routes.py`",
       "line": 14
     },
     {
       "file": "eatfoodapp/templates/home.html",
-      "description": "Let's work with a list!\nYou remember in `routes.py` we had a variable called `foods` with a list of different foods? We are now going to use a for loop to iterate (go over) this list. With the magic of Python, jinja2 and html working together, the for loop will give us an unordered list of all the foods in our list.\n\nNotice how the syntax (the way we write it) is different: for logic we use {% this %}, for text on the web page we use {{ this }}",
+      "description": "Let's work with a list!\nYou remember in `routes.py` we had a variable called `foods` with a list of different foods? We are now going to use a for loop to iterate (go over) this list. With the magic of Python, jinja2 and html working together, the for loop will give us an unordered list of all the foods in our list.\n\nNotice how the syntax (the way we write it) is different: for logic we use {% this %}, for the variables we use {{ this }}\n\nAlso notice that the for loop is clearly ended in line 25 {% like this %}",
       "line": 23
     },
     {
